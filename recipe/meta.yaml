@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-stickyland" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_stickyland-{{ version }}.tar.gz
-  sha256: d1e9bb666841983c9c0d8594031a6984f0714849742ca3efa469cbd8c9f6bae9
+  sha256: 2c30ffd8c1ad1815afd7ee5e1b89add2b59c05974bd9bf621ac90691e5f32ebc
 
 build:
   noarch: python
