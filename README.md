@@ -1,11 +1,11 @@
-About jupyterlab-stickyland
-===========================
+About jupyterlab-stickyland-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-stickyland-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xiaohk/stickyland
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-stickyland-feedstock/blob/main/LICENSE.txt)
 
 Summary: Break free from the linear presentation of Jupyter Notebooks with sticky cells!
 
