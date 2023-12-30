@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-stickyland" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_stickyland-{{ version }}.tar.gz
-  sha256: 2c30ffd8c1ad1815afd7ee5e1b89add2b59c05974bd9bf621ac90691e5f32ebc
+  sha256: a6f5a0cb65d3705b793e6c11b36c26e643208c2cbf6a68e325980b58661fa556
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - jupyterlab <=3.6.4
+    - jupyterlab <4
     - jupyter-packaging ~=0.10,<2
     - pip
     - python >=3.6
   run:
-    - jupyterlab <=3.6.4
+    - jupyterlab <4
     - python >=3.6
 
 test:
