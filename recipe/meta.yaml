@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_stickyland-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_stickyland-{{ version }}.tar.gz
   sha256: a6f5a0cb65d3705b793e6c11b36c26e643208c2cbf6a68e325980b58661fa556
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - jupyterlab <4
     - jupyter-packaging ~=0.10,<2
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - jupyterlab <4
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/xiaohk/stickyland
